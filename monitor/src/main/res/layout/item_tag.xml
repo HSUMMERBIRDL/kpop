@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hl.foundation.library.widget.CTextButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="30dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:background="@drawable/bg_shape_corner_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:text="越栏"
+    android:textColor="@color/text_gray">
+
+</com.hl.foundation.library.widget.CTextButton>

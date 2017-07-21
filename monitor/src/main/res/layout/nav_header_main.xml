@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPageBg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/header_defult_men"/>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/colorContent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_person_info"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_person_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/peron_info"
+                android:textColor="@color/colorContent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_change_pass"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chg_pass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/change_pass"
+                android:textColor="@color/colorContent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_version" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/version_info"
+                android:textColor="@color/colorContent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_language_mode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_language_switch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/language_english"
+                android:textColor="@color/colorContent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_exit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/logout"
+                android:textColor="@color/colorContent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

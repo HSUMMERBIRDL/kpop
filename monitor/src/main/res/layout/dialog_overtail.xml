@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white">
+
+   <!-- <CheckBox
+        android:id="@+id/check_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edit_msg"
+        android:text="处理中" />
+
+    <CheckBox
+        android:id="@+id/check_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_msg"
+        android:layout_marginTop="15dp"
+        android:text="处理完成" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detail_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_main_color"
+            android:text="取消"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/detail_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_main_color"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_shape"
+        android:layout_above="@id/ll_button"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:gravity="left"
+        android:hint="请输入处理进度消息..."
+        android:textSize="14sp" />
+
+</RelativeLayout>

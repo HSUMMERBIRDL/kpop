@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <LinearLayout android:id="@+id/linear"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/dp_10"
+                  android:orientation="horizontal">
+        <Button
+            android:id="@+id/tracking_dialog_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_16"/>
+        <View android:layout_width="@dimen/dp_divider"
+              android:layout_height="match_parent"
+              android:background="@color/bg_light_gray"
+        />
+        <TextView android:id="@+id/tx_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="2"
+                  android:gravity="center"
+                  android:text="起始时间:"
+                  android:textColor="@color/color_blak"
+                  android:textSize="@dimen/font_16"/>
+        <View android:layout_width="@dimen/dp_divider"
+              android:layout_height="match_parent"
+              android:background="@color/bg_light_gray"
+        />
+        <Button
+            android:id="@+id/tracking_dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="确定"
+            android:textSize="@dimen/font_16"/>
+    </LinearLayout>
+    <View style="@style/divider_thin"
+          android:id="@+id/view"
+    android:layout_below="@+id/linear"
+    />
+    <com.kp.monitor.ui.widget.TrackingPickTimeView
+        android:id="@+id/number_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="@dimen/dp_10"/>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <com.hl.foundation.library.widget.CTopBar
+        android:id="@+id/topbar"
+        style="@style/style_topbar"
+        app:mIsLeftShow="true"
+        app:mTitleText="@string/titile_unusal_list" />
+
+
+    <com.hl.foundation.library.widget.CLinearLayout
+        android:id="@+id/ll_type_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#FDFDFD">
+
+        <com.hl.foundation.library.widget.CTextButton
+            android:id="@+id/txt_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FDFDFD"
+            android:gravity="center"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_open_pop"
+            android:drawablePadding="5dp"
+            android:text="类别选择" />
+
+    </com.hl.foundation.library.widget.CLinearLayout>
+
+    <View style="@style/divider_thin"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_select_tag"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tag_statue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtBlack"
+                android:text="选中的异常状态"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_select_unusual_statue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtBlack"
+                android:layout_marginBottom="8dp">
+
+            </com.zhy.view.flowlayout.TagFlowLayout>
+
+            <View
+                android:id="@+id/divide_1"
+                style="@style/divider_thin"></View>
+
+            <TextView
+                android:id="@+id/txt_tag_handle_statue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtBlack"
+                android:text="选中的处理状态"/>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_select_handle_statue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+            </com.zhy.view.flowlayout.TagFlowLayout>
+
+            <View style="@style/divider_thin"></View>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_below="@id/ll_select_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hl.foundation.library.widget.ireyclerview.IRecyclerView
+                android:id="@+id/irc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBgGray"
+                app:loadMoreEnabled="true"
+                app:refreshEnabled="true"
+                app:refreshHeaderLayout="@layout/layout_irecyclerview_classic_refresh_header" />
+
+            <com.hl.foundation.library.widget.LoadingTip
+                android:id="@+id/loadedTip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+
+
+        <com.kp.monitor.ui.widget.UnusualStatueSelectView
+            android:visibility="gone"
+            android:id="@+id/usv_statue"
+            android:padding="15dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.kp.monitor.ui.widget.UnusualStatueSelectView>
+
+
+    </RelativeLayout>
+</LinearLayout>

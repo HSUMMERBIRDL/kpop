@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.marswin89.marsdaemon.demo"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+    }
+    signingConfigs {
+        Sign {
+            keyAlias "${SIGN_ALIAS}"
+            keyPassword "${SIGN_ALIAS_PWD}"
+            storeFile file("${SIGN_STORE_FILE}")
+            storePassword "${SIGN_STORE_PWD}"
+        }
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Sign
+        }
+    }
+
+}
+
+greendao {
+    schemaVersion 1  //数据库schema版本，也可以理解为数据库版本号
+    daoPackage 'com.kp.monitor.basis.db'  //设置DaoMaster 、DaoSession、Dao包名
+    targetGenDir 'src/main/java'  //设置DaoMaster 、DaoSession、Dao目录
+}
+
+dependencies {
+    compile project(':lib:foundation')
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.zhy:flowlayout-lib:1.0.1'
+    compile project(':lib:badgeview')
+    //    compile project(':lib:speex')
+    compile files('libs/AMap3DMap_5.1.0_AMapNavi_5.1.0_AMapSearch_5.1.0_AMapLocation_3.4.0_20170518.jar')
+    /*权限*/
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.1'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.1'
+    compile project(':lib:LibMarsdaemon')
+}

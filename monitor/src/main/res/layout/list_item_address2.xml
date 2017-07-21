@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/select_rec_white_gray"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_item_phone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTxtGreen"
+            android:id="@+id/txt_name" />
+
+        <TextView
+            android:text="电话"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTxtBlack"
+            android:textSize="14sp"
+            android:id="@+id/txt_phone" />
+
+        <TextView
+            android:text="地区"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTxtGray"
+            android:drawableLeft="@drawable/ic_loc"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:id="@+id/txt_dep_name" />
+
+        <View style="@style/divider_thin"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="姓名"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/txt_name" />
+
+        <TextView
+            android:text="地区"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/txt_dep_name" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:text="电话"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txt_phone" />
+
+    <View style="@style/divider_thin"
+        android:layout_marginTop="12dp"/>-->
+
+
+
+</LinearLayout>

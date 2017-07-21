@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="开始录音"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start_record" />
+
+    <TextView
+        android:text="录音文件存放地址："
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_file_address" />
+
+    <Button
+        android:text="停止录音"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_stop_record" />
+
+    <TextView
+        android:text="录音文件存放地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/txt_file_address2" />
+
+    <Button
+        android:text="开始播放"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start_play" />
+
+    <TextView
+        android:text="播放文件地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/txt_play_address" />
+
+    <Button
+        android:text="停止播放"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_stop_play" />
+
+
+    <Button
+        android:text="查询录音个数"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_slect_record_num" />
+</LinearLayout>

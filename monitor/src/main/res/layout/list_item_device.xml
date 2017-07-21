@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_rec_white_gray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_device_cuff"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_device_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorTxtGreen"
+                android:textSize="16sp"
+                android:text="设备号"/>
+
+            <TextView
+                android:id="@+id/txt_device_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:text="手环"/>
+
+            <TextView
+                android:text="地区"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtGray"
+                android:drawableLeft="@drawable/ic_loc"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:id="@+id/txt_device_site" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_device_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="未佩戴"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/ll_info"
+        style="@style/divider_thin"/>
+
+   <!--
+    <TextView
+        android:id="@+id/txt_device_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="设备号:1111111111111" />
+
+    <TextView
+        android:id="@+id/txt_device_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="设备类别:手环" />
+
+    <TextView
+        android:id="@+id/txt_device_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_device_num"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="区域:雄安县" />
+
+    <TextView
+        android:id="@+id/txt_device_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_device_type"
+        android:layout_below="@+id/txt_device_num"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="状态:损坏" />
+
+    <View
+        style="@style/divider_thin"
+        android:layout_below="@+id/txt_device_state"
+        android:layout_marginTop="@dimen/dp_20" />-->
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kp.monitor">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--<uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+    <application
+        android:name=".basis.app.AppAplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a4468d704447959e0630a641854d6571"/>
+        <!--
+                <activity android:name=".ui.activity.MainActivity">
+        -->
+        <activity android:name=".ui.activity.SplashActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/AppTheme"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.MainActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name="com.kp.monitor.ui.activity.AddressListActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.DeviceListActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.GatherListActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.MemberListActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.MsgListActivity"
+                  android:launchMode="singleTask"
+        />
+        <activity android:name="com.kp.monitor.ui.activity.MsgDetailActivity"
+                  android:launchMode="singleTask"
+        />
+        <activity android:name=".ui.activity.TrackingActivity"
+                  android:launchMode="singleTask"
+        />
+        <activity android:name=".ui.activity.TrakingDetailActivity"
+                  android:launchMode="singleTask"
+        />
+        <activity android:name="com.kp.monitor.ui.activity.DeviceDetailActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.GatherDetailActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.MemberDetailActivity"/>
+
+        <activity android:name="com.kp.monitor.ui.activity.SearchMemberActivity"/>
+        <activity android:name="com.kp.monitor.ui.activity.SearchDeviceActivity"/>
+
+        <activity android:name=".ui.activity.UnusalListActivty"/>
+        // 异常列表信息
+
+        <!--越栏人员详情-->
+        <activity android:name=".ui.activity.OverRailActivity"/>
+
+        <activity android:name=".ui.activity.LowPowerActivity"/>
+        // 低电信息界面
+        <activity android:name=".ui.activity.OffLineActivity"/>
+        // 掉线信息界面
+        <activity android:name=".ui.activity.OffWristActivity"/>
+        // 脱腕信息界面
+        <activity android:name=".ui.activity.SeparateActivity"/>
+        // 人机分离信息界面
+        <activity android:name=".ui.activity.PersonInfoActivity"/>
+        // 个人信息界面
+        <activity android:name=".ui.activity.SearchAddressActivity"/>
+        // 通讯录查询界面
+        <activity android:name=".ui.activity.VersionInfoActivity"/>
+        // 版本信息界面
+        <activity android:name=".ui.activity.RecordTestActivity"/>
+        // 测试录音
+        <activity android:name=".ui.activity.RecordInfoActivity"/>
+        // 上传录音文件界面
+        <service android:name="com.marswin89.marsdaemon.demo.Service1" android:process=":aa1"/>
+        <service android:name="com.marswin89.marsdaemon.demo.Service2" android:process=":aa2"/>
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <receiver android:name="com.marswin89.marsdaemon.demo.Receiver1" android:process=":aa1">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.marswin89.marsdaemon.demo.Receiver2" android:process=":aa2"/>
+        <receiver android:name=".ui.broadcast.AudioRecordBroadcast">
+            <intent-filter>
+                <action android:name="com.monitor.audiorecord"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

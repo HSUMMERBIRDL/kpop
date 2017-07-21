@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--按钮的白色半圆弧背景  上下间距被控制在3dp 透明白色-->
+
+<item android:state_pressed="true">
+    <shape>
+        <solid android:color="@color/colorThemeSelect" />
+        <corners android:radius="3dp" />
+        <padding android:top="10dp" android:bottom="10dp" />
+    </shape>
+</item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorThemeSelect" />
+            <corners android:radius="3dp" />
+            <padding android:top="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+
+<item>
+    <shape>
+        <solid android:color="@color/colorTheme" />
+        <corners android:radius="3dp" />
+        <padding android:top="10dp" android:bottom="10dp" />
+    </shape>
+</item>
+
+</selector>

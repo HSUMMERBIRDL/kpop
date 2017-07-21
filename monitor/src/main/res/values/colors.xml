@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHalfTransparent">#80000000</color>
+
+    <!--背景颜色-->
+    <color name="colorTheme">#263456</color>
+    <color name="colorPageBg">#ffffffff</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorWhiteSelected">#a1ffffff</color>
+    <color name="colorLightGray">#E6E6E6</color>
+    <color name="colorLightGray2">#F6F6F6</color>
+    <color name="colorBgSearch">#f0f0f0</color>
+    <color name="colorBgSearchSelect">#AFf0f0f0</color>
+    <color name="colorBgBlue">#3F51B5</color>
+    <color name="colorBgBlue2">#1ab2fe</color>
+    <color name="bg_light_gray">#dddddd</color>
+    <color name="colorBgBlue2Selected">#a01ab2fe</color>
+    <color name="colorBgbuttonGray">#f8f8f8</color>
+    <color name="colorBgbuttonGraySelected">#f0f8f8f8</color>
+    <color name="colorBgGray">#ebeced</color>
+    <color name="colorBgGraySelected">#A0ebeced</color>
+    <color name="deviceDetailBg">#E4F5FC</color>
+    <color name="deviceDetailTxt">#A7C4C8</color>
+
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+    <color name="color_blak">#000000</color>
+
+    <!--正文文字颜色  前缀colorTxt-->
+    <color name="colorContent">#ff333333</color>
+    <color name="colorTxtWhite">#FFFFFFFF</color>
+    <color name="colorTabText">#585858</color>
+    <color name="colorTxtRed">#da1f1f</color>
+    <color name="colorTxtGray">#656565</color>
+    <color name="colorTxtBlue">#3F51B5</color>
+    <color name="colorTxtBlack">#000000</color>
+    <color name="colorTxtGreen">#62ab00</color>
+
+    <!--点击后的颜色-->
+    <color name="colorThemeSelect">#AF263456</color>
+    <color name="color_message">#3E3E3E</color>
+    <color name="color_content">#ADADAD</color>
+</resources>

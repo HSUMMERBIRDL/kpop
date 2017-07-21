@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\AndroidDev\MyProjects\key_population\lib\badgeview\src\main\assets"/><source path="E:\AndroidDev\MyProjects\key_population\lib\badgeview\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\AndroidDev\MyProjects\key_population\lib\badgeview\src\release\assets"/></dataSet></merger>

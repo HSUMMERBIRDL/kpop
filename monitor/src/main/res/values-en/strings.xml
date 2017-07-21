@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">keyPop</string>
+
+    <string name="letter_digit_limit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!--主界面-->
+    <string name="titile">ۇ خانىم ھەممى چىقىمن</string>  // 重点人群监控系统
+    <string name="city_name">阿克苏信息中心</string>
+
+
+    <!--登录界面-->
+    <string name="input_user_name">please input username</string>
+    <string name="input_pass_word">请输入登录密码</string>
+    <string name="please_input_user_name">请输入用户名</string>
+    <string name="please_input_pass">请输入密码</string>
+    <string name="login">قارشى ئالىمىز</string>  // 登录
+
+
+    <!--设备详情界面-->
+    <string name="title_device_detail">Device Detail</string>
+
+    <!--聚集详情界面-->
+    <string name="title_gather_detail">聚集详情</string>
+
+   <!-- 消息详情界面-->
+    <string name="title_msg_detial">消息详情</string>
+
+    <!--人员详情界面-->
+    <string name="title_member_detail">Member Detail</string>
+
+    <!--人员列表界面-->
+    <string name="titile_member_list">Member List</string>
+
+    <!--通讯录列表-->
+    <string name="title_address_list">通讯录列表</string>
+
+    <!--消息列表界面-->
+    <string name="title_message_list">消息列表</string>
+
+    <!--设备列表界面-->
+    <string name="title_device_list">设备列表</string>
+    <string name="title_gather_list">聚集列表</string>
+
+    <!--主界面-->
+    <string name="language_english">切换到中文</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:fitsSystemWindows="true"
+    android:background="@drawable/select_rec_white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="聚集地点"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_gather_loc"
+        android:padding="20dp" />
+
+    <View style="@style/divider_thin"/>
+
+</LinearLayout>

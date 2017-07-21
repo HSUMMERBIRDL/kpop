@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_status"
+        android:background="@color/colorTheme">
+
+        <ImageView
+            android:id="@+id/iv_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+            android:src="@drawable/titlebar_menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/titile"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_16"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:id="@+id/main_flush"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="right"
+                   android:padding="@dimen/dp_15"
+                   android:src="@mipmap/ic_main_flush"
+        />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/flush_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/red"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2"
+        android:visibility="gone"
+        android:text="正在刷新数据...."
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_14"/>
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/flush_notify"
+        android:gravity="right"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"/>
+
+    <!--  <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/toolbar"
+          android:layout_marginRight="@dimen/dp_10"
+          android:layout_marginTop="@dimen/dp_16"
+          android:text="职位"
+          android:textColor="@android:color/black"
+          android:textSize="@dimen/font_14" />-->
+
+    <View
+        android:id="@+id/diviver_view"
+        style="@style/divider_thin"
+        android:layout_below="@+id/flush_notify"
+        android:visibility="gone"></View>
+
+    <com.kp.monitor.ui.widget.UnusualGridView
+        android:id="@+id/unusual_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diviver_view"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:numColumns="3"
+        android:padding="1dp"/>
+    <!--
+        <View
+            android:id="@+id/view_bottom"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_divider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20" />-->
+
+    <com.kp.monitor.ui.widget.FunctionGridView
+        android:id="@+id/detail_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:numColumns="3"
+        android:padding="1dp"/>
+</RelativeLayout>

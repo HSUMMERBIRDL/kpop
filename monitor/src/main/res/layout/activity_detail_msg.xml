@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hl.foundation.library.widget.CTopBar
+        android:id="@+id/topbar"
+        style="@style/style_topbar"
+        app:mTitleText="@string/title_msg_detial" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:text="标题"
+                android:textColor="@color/color_blak"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/send_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发送时间"
+                    android:textColor="@color/colorTxtGray" />
+
+                <TextView
+                    android:id="@+id/msg_send_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/send_person"
+                    android:text="发送人"
+                    android:textColor="@color/colorTxtGray" />
+
+
+                <TextView
+                    android:id="@+id/msg_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="状态"
+                    android:textColor="@color/colorTxtGray" />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider_thin"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/read_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/select_main_color"
+                android:gravity="center"
+                android:text="未读"
+                android:textColor="@color/colorTxtWhite"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

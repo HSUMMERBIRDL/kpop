@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_unusual_statue"
+    android:clickable="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTxtBlack"
+        android:textSize="16sp"
+        android:text="异常状态"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_unusual_statue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+    <CheckBox
+        android:id="@+id/cb_unusual_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选"
+        />
+
+   <View style="@style/divider_thin"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTxtBlack"
+        android:textSize="16sp"
+        android:text="处理状态"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_handle_statue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+    <CheckBox
+        android:id="@+id/cb_handle_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选"
+        />
+
+    <View style="@style/divider_thin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.hl.foundation.library.widget.CTextButton
+            style="@style/button_gray"
+            android:id="@+id/txt_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:text="取消"/>
+
+        <com.hl.foundation.library.widget.CTextButton
+            style="@style/button_theme"
+            android:id="@+id/txt_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

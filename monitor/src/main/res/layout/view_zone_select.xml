@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#66444444"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingTop="1dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <!--县-->
+        <FrameLayout
+            android:id="@+id/fl_xian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_xian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"/>
+
+        <!--乡-->
+        <FrameLayout
+            android:id="@+id/fl_xiang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_xiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray"/>
+
+        <!--村-->
+        <FrameLayout
+            android:id="@+id/fl_cun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_cun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divider_thin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <com.hl.foundation.library.widget.CTextButton
+            style="@style/button_gray"
+            android:id="@+id/txt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            android:text="取消"/>
+
+        <com.hl.foundation.library.widget.CTextButton
+            style="@style/button_theme"
+            android:id="@+id/txt_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <com.hl.foundation.library.widget.CTextButton
+            android:id="@+id/txt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/member_list_cancel"/>
+
+        <com.hl.foundation.library.widget.CTextButton
+            android:id="@+id/txt_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/member_list_ok"/>
+
+
+    </LinearLayout>-->
+
+    <View
+        android:id="@+id/view_down"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
