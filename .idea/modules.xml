@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lib/LibMarsdaemon/LibMarsdaemon.iml" filepath="$PROJECT_DIR$/lib/LibMarsdaemon/LibMarsdaemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/badgeview/badgeview.iml" filepath="$PROJECT_DIR$/lib/badgeview/badgeview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/foundation/foundation.iml" filepath="$PROJECT_DIR$/lib/foundation/foundation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/key_population.iml" filepath="$PROJECT_DIR$/key_population.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor/monitor.iml" filepath="$PROJECT_DIR$/monitor/monitor.iml" />
+    </modules>
+  </component>
+</project>
